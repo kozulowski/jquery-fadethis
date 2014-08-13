@@ -24,7 +24,8 @@
             reverse:        true,
             distance:       50,
             scrolledIn:     null,
-            scrolledOut:    null
+            scrolledOut:    null,
+            delay:			0
         },
         init: function ( elem, options ) {
             this.addElements( elem, options );
@@ -166,7 +167,7 @@
 
 
             if (appear) {
-                item.element.stop(true).animate(stateAnimIn, item.options.speed, item.options.easing);
+                item.element.stop(true).delay(item.options.delay).animate(stateAnimIn, item.options.speed, item.options.easing);
             } else {
                 item.element.stop(true).animate(stateAnimOut, item.options.speed, item.options.easing);
             }

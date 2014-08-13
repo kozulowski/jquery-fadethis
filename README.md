@@ -28,15 +28,15 @@
 
 You can now set a time delay before an animation launches. Just pass it as a normal parameter..
 
-
-    $(window).fadeThis({"delay": 500});
-
+```javascript
+$(window).fadeThis({"delay": 500});
+```
 
 ..or in the html
 
-
-	<div class="slide-left"  data-plugin-options='{"delay": 100}'></div>
-
+```html
+<div class="slide-left"  data-plugin-options='{"delay": 100}'></div>
+```
 
 ## License
 
